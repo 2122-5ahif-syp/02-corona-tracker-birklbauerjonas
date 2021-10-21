@@ -75,3 +75,18 @@ actionbutton.addEventListener('click', () => {
         msform.innerHTML = "<h1>Thank you for registration</h1>";
     }
 })
+
+window.onload = function () {
+    if (localStorage['firstName'] != null) {
+        firstName.value = localStorage['firstName'];
+    }
+    if (localStorage['lastName'] != null) {
+        lastName.value = localStorage['lastName'];
+    }
+    if (localStorage['phoneNumber'] != null) {
+        phone.value = localStorage['phoneNumber'];
+    }
+    if (localStorage['email'] != null) {
+        email.value = localStorage['email'];
+    }
+}
